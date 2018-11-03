@@ -2,7 +2,17 @@
 # Main gitignore                                       #
 ########################################################
 
+# Ignore dataset images content: sah folders 
+data/sah/*
+data/sah_blur/*
+data/sah_contrast/*
+data/sah_sharp/*
 
+# Ignore dataset images content: sdh folders
+data/sdh/*
+data/sdh_blur/*
+data/sdh_contrast/*
+data/sdh_sharp/*
 
 
 ########################################################
