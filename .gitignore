@@ -3,10 +3,8 @@
 ########################################################
 
 # Ignore dataset images content: sah folders 
-*/sah*
+data/sah/*
 
-# Ignore dataset images content: sdh folders
-*/sdh*
 
 ########################################################
 # Default gitignore template                           #
