@@ -1,11 +1,14 @@
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('split_num', type=int, choices=[0,1,2,3,4])
+parser.add_argument('log_file_name', type=str)
 
 # ========================= Model Configs ==========================
+parser.add_argument('--pretraining', type=bool, default = False)
+parser.add_argument('--dataset', type=str, choices = ['tumor_data', 'data', 'data_aug'])
 parser.add_argument('--arch', type=str, default="resnet101")
 parser.add_argument('-p', '--preprocessing_filter', type=str, default=None, choices = ['blur','sharp','contrast'])
-parser.add_argument('--prefix', type=str, default=None)
+parser.add_argument('--prefix', type=str, default="")
 parser.add_argument('--loss_type', type=str, default="nll",
                     choices=['nll'])
 
